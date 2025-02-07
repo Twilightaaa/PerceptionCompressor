@@ -1,9 +1,10 @@
 # PerceptionCompressor
 Code for [Perception Compressor: A Training-Free Prompt Compression Framework in Long Context Scenarios](https://arxiv.org/abs/2409.19272) (NAACL 2025 Findings)<br>
-  _Jiwei Tang, Jin Xu, Tingwei Lu, Zhicheng Zhang, Yiming Zhao, Lin Hai, and Hai-Tao Zhang_
+  _Jiwei Tang, Jin Xu, Tingwei Lu, Zhicheng Zhang, Yiming Zhao, Lin Hai, and Hai-Tao Zheng_
 
 ## Overview
-![Framework](./images/framework.pdf)
+![Framework](./images/framework.png) 
+
 Framework of Perception Compressor. The original prompt can be divided into instruction, demonstrations, and question. Perception Compressor first uses the perception retriever to retrieve the most relevant demonstrations and reorders them from most to least relevant to the input question. Then, it performs a semi-guided iterative compression to obtain the final compressed prompt. The entire process is controlled by the compression ratios and open-book ratios allocated by the dual-slope ratio allocator.
 
 ## Instructions
